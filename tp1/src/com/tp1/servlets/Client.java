@@ -19,7 +19,7 @@ public class Client extends HttpServlet {
     	public static final String INF_EMAIL     = "emailClient";
  
     	public static final String ATT_CLIENT      = "client";
-    	public static final String ATT_CREATION     = "infoCreation";
+    	public static final String ATT_CREATION    = "infoCreation";
     	public static final String ATT_ERREUR      = "erreur";
  
     	public static final String VUE             = "/WEB-INF/affichageClient.jsp";
