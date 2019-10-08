@@ -1,4 +1,3 @@
-
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -11,11 +10,12 @@
     <body>
         <c:import url="/inc/menu.jsp" />
         <div>
-            <form method="get" action="<c:url value="/creationClient"/>">
-                <fieldset>
+            <form method="post" action="<c:url value="/creationClient"/>">
+               <fieldset>
                     <legend>Informations client</legend>
                     <c:import url="/inc/inc_client_form.jsp" />
                 </fieldset>
+                <p class="info">${ form.result }</p>
                 <input type="submit" value="Valider"  />
                 <input type="reset" value="Remettre à zéro" /> <br />
             </form>
